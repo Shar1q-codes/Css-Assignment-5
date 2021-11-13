@@ -1,0 +1,423 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: yellow;
+}
+
+
+/* index.html */
+
+.header-1 {
+	width: 40%;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.main-container-1 {
+	width: 40%;
+	margin: auto;
+}
+
+.main-row-1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.main-container-box {
+	height: 100px;
+	width: 100px;
+	background-color: royalblue;
+	transform: skewx(-20deg);
+	margin-bottom: 60px;
+	animation: row1 5s linear 2s infinite;
+}
+
+@keyframes row1 {
+	50% {
+		transform: skewX(20deg)
+	}
+}
+
+.main-container-box1 {
+	height: 100px;
+	width: 100px;
+	background-color: rgb(104, 106, 109);
+	transform: skewy(-20deg);
+	margin-bottom: 60px;
+	animation: row2 5s linear 2s infinite;
+}
+
+@keyframes row2 {
+	50% {
+		transform: skewY(20deg)
+	}
+}
+
+.main-container-box2 {
+	height: 100px;
+	width: 100px;
+	background-color: royalblue;
+	transform: rotate(20deg);
+	margin-bottom: 60px;
+	animation: row3 3s ease-in-out 2s infinite;
+}
+
+@keyframes row3 {
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+.main-container-box3 {
+	height: 100px;
+	width: 100px;
+	margin-bottom: 60px;
+}
+
+#i1 {
+	background-color: royalblue;
+	transform: scaleY(0.5);
+	animation: row4-1 5s ease-in-out 2s infinite;
+}
+
+@keyframes row4-1 {
+	50% {
+		transform: scaleY(1.1)
+	}
+}
+
+#i2 {
+	background-color: rgb(83, 46, 44);
+	transform: scaleX(0.5);
+	animation: row4-2 5s ease-in-out 2s infinite;
+}
+
+@keyframes row4-2 {
+	50% {
+		transform: scaleX(1.1)
+	}
+}
+
+#i3 {
+	background-color: rgb(77, 112, 63);
+	transform: rotate(10deg);
+	animation: row4-3 2s linear 2s infinite;
+}
+
+@keyframes row4-3 {
+	50% {
+		transform: rotate(90deg)
+	}
+}
+
+.text {
+	width: 80%;
+	margin: auto;
+	font-size: 30px;
+	text-align: center;
+}
+
+
+/* index2.html */
+
+.header2 {
+	width: 40%;
+	margin: auto;
+	/* border:2px solid black; */
+	text-align: center;
+}
+
+.header2 h1 {
+	margin: 5px;
+}
+
+.header2-box {
+	width: 40%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.header2-box1 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(48, 216, 32);
+	margin: 15px;
+	transition: width 2s linear 1s;
+}
+
+.header2-box1:hover {
+	width: 300px;
+}
+
+.header2-box2 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(48, 216, 32);
+	margin: 15px;
+	transition: width 2s linear 1s, height 2s linear 1s;
+}
+
+.header2-box2:hover {
+	width: 300px;
+	height: 300px;
+}
+
+.header2-box3 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(48, 216, 32);
+	margin: 15px;
+	transition: width 2s linear 1s;
+}
+
+.header2-box3:hover {
+	width: 300px;
+}
+
+.header2-box4 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(48, 216, 32);
+	margin: 15px;
+	transition: width 2s ease 1s;
+}
+
+.header2-box4:hover {
+	width: 300px;
+}
+
+.header2-box5 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(48, 216, 32);
+	margin: 15px;
+	transition: width 2s ease-in 1s;
+}
+
+.header2-box5:hover {
+	width: 300px;
+}
+
+.header2-box6 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(48, 216, 32);
+	margin: 15px;
+	transition: width 2s ease-out 1s;
+}
+
+.header2-box6:hover {
+	width: 300px;
+}
+
+.header2-box7 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(48, 216, 32);
+	margin: 15px;
+	transition: width 2s ease-in-out 1s;
+}
+
+.header2-box7:hover {
+	width: 300px;
+}
+
+.text-back-next {
+	width: 40%;
+	margin: auto;
+	text-align: center;
+	font-size: 25px;
+}
+
+
+/* index3.html*/
+
+.header3 {
+	width: 60vw;
+	margin: auto;
+	height: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 20vw;
+	z-index: 1;
+}
+
+.header3-box {
+	Background-color: orange;
+	font-size: 40px;
+	margin-right: 10px;
+}
+
+.header3-box1 {
+	Background-color: white;
+	font-size: 40px;
+	margin-right: 10px;
+}
+
+.header3-box2 {
+	Background-color: green;
+	font-size: 40px;
+	margin-right: 10px;
+}
+
+.cloud {
+	height: 100vh;
+	width: 500%;
+	margin: 0px;
+	background-image: url(./Images/sky.jpg);
+	background-size: cover;
+	position: relative;
+	animation: sky 5s linear 2s infinite;
+}
+
+@keyframes cloud {
+	100% {
+		transform: translateX(-1000px);
+	}
+}
+
+.sun {
+	height: 200px;
+	width: 100%;
+	position: absolute;
+	top: 150px;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+	text-align: right;
+}
+
+.sun_image {
+	height: 150px;
+	width: 150px;
+	animation: sun 60s linear 2s infinite;
+}
+
+@keyframes sun {
+	100% {
+		transform: translateX(-1000px);
+	}
+}
+
+.road {
+	height: 200px;
+	width: 550%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-image: url(./Images/road.jpg);
+	z-index: 1;
+	animation: road 5s linear 2s infinite;
+}
+
+@keyframes road {
+	100% {
+		transform: translateX(-3000px);
+	}
+}
+
+.city {
+	height: 200px;
+	width: 500%;
+	position: absolute;
+	bottom: 200px;
+	left: 0px;
+	right: 0px;
+	background-image: url("./Images/city.jpeg");
+	z-index: 1;
+	animation: city 5s linear 2s infinite;
+}
+
+@keyframes city {
+	100% {
+		transform: translateX(-1500px);
+	}
+}
+
+.car {
+	height: 200px;
+	width: 100%;
+	background-image: url(./Images/car.png);
+	background-size: 340px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	position: absolute;
+	bottom: 105px;
+	left: 110px;
+	z-index: 2;
+	animation: car 1s linear 2s infinite;
+}
+
+@keyframes car {
+	100% {
+		transform: translateY(-1px);
+	}
+	50% {
+		transform: translateY(1px);
+	}
+	0% {
+		transform: translateY(-1px);
+	}
+}
+
+.wheel {
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	bottom: 100px;
+	left: 0px;
+	right: 0px;
+	z-index: 2;
+}
+
+.front_wheel {
+	height: 56px;
+	width: 56px;
+	left: 857px;
+	bottom: 15px;
+	position: absolute;
+	animation: wheel-rotation 1s linear 2s infinite;
+}
+
+.back_wheel {
+	height: 55px;
+	width: 55px;
+	left: 649px;
+	bottom: 15px;
+	position: absolute;
+	animation: wheel-rotation 1s linear 2s infinite;
+}
+
+@keyframes wheel-rotation {
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+.indian-flag {
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 135px;
+	z-index: 2;
+}
+
+.flag {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	left: 64%;
+}
